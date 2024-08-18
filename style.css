@@ -1,0 +1,135 @@
+/* Estilo para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("./imagenes/fondo2.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para la cabecera */
+.presentacion {
+    background-color: #11151a;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.presentacion h1 {
+    font-size: 22px;
+    margin: 0;
+}
+
+/* Contenedor principal centrado */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px); /* Ajusta el alto según el tamaño de la cabecera */
+    padding: 30px;
+}
+
+/* Contenedor de la calculadora */
+.container {
+    background-image: url("./imagenes/FONDO3.jpg");
+    background-position: 0%;
+    padding: 20px;
+    color: #24bd38;
+    border-radius: 10px;
+    border:  5px solid #8a9c30;
+    box-shadow: 0 0 15px rgba(194, 185, 185, 0.1);
+    max-width: 400px;
+    width: 80%;
+    font-size: 26px;
+}
+
+/* Título de la calculadora */
+.container h1 {
+    text-align: center;
+       margin-bottom: 20px;
+    color: #ba95c9;
+    font-size: 36px;
+}
+
+/* Contenedor de cada input */
+.input-container {
+    margin-bottom: 26px;
+}
+
+/* Etiquetas */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 8px;
+    border: 3px solid #0a0404;
+    border-radius: 5px;
+    font-size: 22px;
+}
+
+/* Botón de calcular */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #df3685;
+    color: rgb(3, 32, 3);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+button:hover {
+    background-color: #24bd38;
+}
+
+/* Resultado */
+.result {
+    margin-top: 20px;
+    text-align: center;
+    color: #24bd38;
+    font-size: 16px;
+
+}
+
+.result p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    input, button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
+
+/* Responsividad para pantallas medianas */
+@media (min-width: 481px) and (max-width: 720px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+/* Responsividad para pantallas grandes */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        max-width: 80%;
+    }
+}

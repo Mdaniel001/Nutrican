@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrican</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabecera -->
+    <header class="presentacion">
+        <h1>Bienvenido al área científica de Nutrican</h1>
+    </header>
+
+    <!-- Contenedor principal centrado -->
+    <div class="main-container">
+        <div class="container">
+            <h1>Calculadora de Proporciones de Ingredientes</h1>
+            <div class="input-container">
+                <label for="x0">Proporciones Iniciales (x0):</label>
+                <input id="x0" type="text" value="0.5,0.3,0.2">
+            </div>
+            <div class="input-container">
+                <label for="x1">Proporciones Finales (x1):</label>
+                <input id="x1" type="text" value="0.6,0.25,0.15">
+            </div>
+            <div class="input-container">
+                <label for="errors">Errores (E):</label>
+                <input id="errors" type="text" value="0.01,-0.02,0.005">
+            </div>
+            <button onclick="calcular()">Calcular Proporciones Ideales</button>
+            <div class="result">
+                <h2>Resultado:</h2>
+                <p id="resultado"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
